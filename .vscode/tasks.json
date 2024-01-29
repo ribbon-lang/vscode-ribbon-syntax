@@ -1,0 +1,29 @@
+{ "version": "2.0.0"
+, "problemMatcher": []
+, "presentation":
+  { "panel": "shared"
+  , "showReuseMessage": false
+  , "clear": true
+  }
+, "tasks":
+    [ { "label": "Build VS Code Syntax Extension"
+      , "type": "shell"
+      , "group": "build"
+      , "command": "vsce package"
+      }
+    , { "label": "Install VS Code Syntax Extension"
+      , "type": "shell"
+      , "group": "build"
+      , "command": "code --install-extension ribbon-syntax-0.0.1.vsix"
+      }
+    , { "label": "Build and Install VS Code Syntax Extension"
+      , "type": "shell"
+      , "group": "build"
+      , "dependsOn":
+        [ "Build VS Code Syntax Extension"
+        , "Install VS Code Syntax Extension"
+        ]
+      , "dependsOrder": "sequence"
+      }
+    ]
+}

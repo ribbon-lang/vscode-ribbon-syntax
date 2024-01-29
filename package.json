@@ -1,0 +1,40 @@
+{ "name": "ribbon-syntax"
+, "displayName": "Ribbon Syntax"
+, "description": "Syntax highlighting extension for Ribbon"
+, "icon": "images/emblem.png"
+, "galleryBanner":
+    { "color": "#fad0f4"
+    , "theme": "light"
+    }
+, "version": "0.0.1"
+, "publisher": "ribbon-lang"
+, "repository":
+    { "type": "git"
+    , "url": "https://github.com/ribbon-lang"
+    }
+, "engines":
+    { "vscode": "^1.22.0" }
+, "categories":
+    [ "Programming Languages" ]
+, "contributes":
+    { "languages":
+        [ { "id": "ribbon"
+          , "aliases":
+            [ "Ribbon", "ribbon" ]
+          , "extensions":
+            [ ".bb"
+            , ".bon"
+            , ".ribbon"
+            , ".ri"
+            ]
+          , "configuration": "./language-configuration.json"
+          }
+        ]
+    , "grammars":
+        [ { "language": "ribbon"
+          , "scopeName": "source.ribbon"
+          , "path": "./syntaxes/ribbon.tmLanguage.json"
+          }
+        ]
+    }
+}
