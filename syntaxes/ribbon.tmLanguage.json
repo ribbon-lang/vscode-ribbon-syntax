@@ -11,7 +11,7 @@
               , "match": "\\b(let|if|then|else|loop|while|until|do|break|continue|goto|defer|return|select|match|in|with|where|for|forall)\\b"
               }
             , { "name": "keyword.control.directive.ribbon"
-              , "match": "\\b(import|export|use)\\b"
+              , "match": "\\b(use)\\b"
               }
             , { "name": "keyword.control.unsafe.ribbon"
               , "match": "\\b(unsafe)\\b"
@@ -20,7 +20,7 @@
               , "match": "[ζϕλ∀∃ΠΣ]"
               }
             , { "name": "storage.type.ribbon"
-              , "match": "\\b(effect|handler|type|value|kind|fun|class|instance|module|namespace|foreign)\\b"
+              , "match": "\\b(effect|handler|type|value|kind|fun|class|instance|module|file|namespace|foreign)\\b"
               }
             , { "name": "variable.ribbon"
               , "match": "(\\b|(?<=[ζϕλ∀∃ΠΣ]))((\\p{Lu}(?<![ζϕλ∀∃ΠΣ]))(['_]|[^\\p{C}\\p{S}\\p{P}\\p{Z}])*)(?<![ζϕλ∀∃ΠΣ])"
@@ -111,7 +111,7 @@
               , "match": "\\b(let|if|then|else|loop|while|until|do|break|continue|goto|defer|return|select|match|in|with|where|for|forall)\\b"
               }
             , { "name": "keyword.control.directive.quoted.ribbon"
-              , "match": "\\b(import|export|use)\\b"
+              , "match": "\\b(use)\\b"
               }
             , { "name": "keyword.control.unsafe.quoted.ribbon"
               , "match": "\\b(unsafe)\\b"
@@ -120,7 +120,7 @@
               , "match": "[ζϕλ∀∃ΠΣ]"
               }
             , { "name": "storage.type.quoted.ribbon"
-              , "match": "\\b(effect|handler|type|value|kind|fun|class|instance|module|namespace)\\b"
+              , "match": "\\b(effect|handler|type|value|kind|fun|class|instance|module|file|namespace|foreign)\\b"
               }
             , { "name": "variable.quoted.ribbon"
               , "match": "(\\b|(?<=[ζϕλ∀∃ΠΣ]))((\\p{Lu}(?<![ζϕλ∀∃ΠΣ]))(['_]|[^\\p{C}\\p{S}\\p{P}\\p{Z}])*)(?<![ζϕλ∀∃ΠΣ])"
