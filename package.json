@@ -6,7 +6,7 @@
     { "color": "#fad0f4"
     , "theme": "light"
     }
-, "version": "0.0.1"
+, "version": "0.1.0"
 , "publisher": "ribbon-lang"
 , "repository":
     { "type": "git"
@@ -23,9 +23,6 @@
             [ "Ribbon", "ribbon" ]
           , "extensions":
             [ ".bb"
-            , ".bon"
-            , ".ribbon"
-            , ".ri"
             ]
           , "configuration": "./language-configuration.json"
           }
