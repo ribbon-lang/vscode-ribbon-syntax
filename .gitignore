@@ -1,4 +1,5 @@
+dist
 node_modules
-token
-package-lock.json
 *.vsix
+package-lock.json
+yarn.lock

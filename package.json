@@ -8,6 +8,7 @@
     }
 , "version": "0.1.0"
 , "publisher": "ribbon-lang"
+, "license": "Apache-2.0"
 , "repository":
     { "type": "git"
     , "url": "https://github.com/ribbon-lang"
@@ -22,16 +23,27 @@
           , "aliases":
             [ "Ribbon", "ribbon" ]
           , "extensions":
-            [ ".bb"
-            ]
-          , "configuration": "./language-configuration.json"
+            [ ".bb" ]
+          , "configuration": "./dist/ribbon.config.json"
           }
         ]
     , "grammars":
         [ { "language": "ribbon"
           , "scopeName": "source.ribbon"
-          , "path": "./syntaxes/ribbon.tmLanguage.json"
+          , "path": "./dist/ribbon.tmLanguage.json"
           }
         ]
+    }
+, "type": "module"
+, "scripts":
+    { "build": "vscgb --name ribbon ./src"
+    , "package": "vsce package"
+    , "install-extension": "vscgi"
+    }
+, "devDependencies":
+    { "@types/vscode-grammar": "github:noxabellus/vscode-grammar-types"
+    , "vscode-grammar-builder": "github:noxabellus/vscode-grammar-builder"
+    , "typescript": "^5.3.3"
+    , "vsce": "^2.23.0"
     }
 }

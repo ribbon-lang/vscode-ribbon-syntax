@@ -20,7 +20,7 @@
               , "match": "[ζϕλ∀∃ΠΣ]"
               }
             , { "name": "storage.type.ribbon"
-              , "match": "\\b(effect|handler|type|value|kind|fun|class|instance|module|file|namespace|foreign)\\b"
+              , "match": "\\b(effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\\b"
               }
             , { "name": "variable.ribbon"
               , "match": "(\\b|(?<=[ζϕλ∀∃ΠΣ]))((\\p{Lu}(?<![ζϕλ∀∃ΠΣ]))(['_]|[^\\p{C}\\p{S}\\p{P}\\p{Z}])*)(?<![ζϕλ∀∃ΠΣ])"
@@ -120,7 +120,7 @@
               , "match": "[ζϕλ∀∃ΠΣ]"
               }
             , { "name": "storage.type.quoted.ribbon"
-              , "match": "\\b(effect|handler|type|value|kind|fun|class|instance|module|file|namespace|foreign)\\b"
+              , "match": "\\b(effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\\b"
               }
             , { "name": "variable.quoted.ribbon"
               , "match": "(\\b|(?<=[ζϕλ∀∃ΠΣ]))((\\p{Lu}(?<![ζϕλ∀∃ΠΣ]))(['_]|[^\\p{C}\\p{S}\\p{P}\\p{Z}])*)(?<![ζϕλ∀∃ΠΣ])"

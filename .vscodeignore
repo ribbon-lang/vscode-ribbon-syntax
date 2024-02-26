@@ -1,4 +1,6 @@
 .vscode/**
-.vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
+tsconfig.json
+yarn.lock
+package-lock.json
+node_modules
+src

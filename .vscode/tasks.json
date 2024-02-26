@@ -9,18 +9,24 @@
     [ { "label": "Build VS Code Syntax Extension"
       , "type": "shell"
       , "group": "build"
-      , "command": "vsce package"
+      , "command": "npm run build"
+      }
+    , { "label" : "Package VS Code Syntax Extension"
+      , "type": "shell"
+      , "group": "build"
+      , "command": "npm run package"
       }
     , { "label": "Install VS Code Syntax Extension"
       , "type": "shell"
       , "group": "build"
-      , "command": "code --install-extension ribbon-syntax-0.1.0.vsix"
+      , "command": "npm run install-extension"
       }
-    , { "label": "Build and Install VS Code Syntax Extension"
+    , { "label": "Build, Package and Install VS Code Syntax Extension"
       , "type": "shell"
       , "group": "build"
       , "dependsOn":
         [ "Build VS Code Syntax Extension"
+        , "Package VS Code Syntax Extension"
         , "Install VS Code Syntax Extension"
         ]
       , "dependsOrder": "sequence"
