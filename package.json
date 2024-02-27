@@ -25,6 +25,7 @@
           , "extensions":
             [ ".bb" ]
           , "configuration": "./dist/ribbon.config.json"
+          , "firstLine": "^#!\\s*/.*\\bribboni[0-9.-]*\\b"
           }
         ]
     , "grammars":
@@ -44,6 +45,5 @@
     { "@types/vscode-grammar": "github:noxabellus/vscode-grammar-types"
     , "vscode-grammar-builder": "github:noxabellus/vscode-grammar-builder"
     , "typescript": "^5.3.3"
-    , "vsce": "^2.23.0"
     }
 }
