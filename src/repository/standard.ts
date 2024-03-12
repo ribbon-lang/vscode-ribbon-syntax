@@ -22,7 +22,7 @@ export const standard: TMGrammarScope =
       , match: /[ζϕλΛ∀∃ΠΣ]/
       }
     , { name: "storage.type.ribbon"
-      , match: /\b(effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
+      , match: /\b(effect|handler|type|alias|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
       }
     , { name: "variable.ribbon"
       , match: /(\b|(?<=[ζϕλΛ∀∃ΠΣ]))((\p{Lu}(?<![ζϕλΛ∀∃ΠΣ]))(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*)(?<![ζϕλΛ∀∃ΠΣ])/
