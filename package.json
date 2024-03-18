@@ -33,6 +33,11 @@
           , "scopeName": "source.ribbon"
           , "path": "./dist/ribbon.tmLanguage.json"
           }
+        , { "scopeName": "markdown.ribbon.codeblock"
+          , "path": "./dist/ribbon_codeblock.json"
+          , "injectTo": [ "text.html.markdown" ]
+          , "embeddedLanguages": { "meta.embedded.block.ribbon": "ribbon" }
+          }
         ]
     }
 , "type": "module"
