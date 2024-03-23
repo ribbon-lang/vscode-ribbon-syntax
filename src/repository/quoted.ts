@@ -6,7 +6,7 @@ export const quoted: TMGrammarScope =
       , match: /\b(let|if|then|else|loop|while|until|do|break|continue|goto|defer|return|select|match|in|with|where|for|forall)\b/
       }
     , { name: "invalid.illegal.quoted.ribbon"
-      , match: /\b(use)\b/
+      , match: /\b(use|hiding)\b/
       }
     , { name: "invalid.illegal.quoted.ribbon"
       , match: /\b(unsafe)\b/

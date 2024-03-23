@@ -13,7 +13,7 @@ export const standard: TMGrammarScope =
       , match: /\b(let|if|then|else|loop|while|until|do|break|continue|goto|defer|return|select|match|in|with|where|for|forall)\b/
       }
     , { name: "keyword.control.directive.ribbon"
-      , match: /\b(use)\b/
+      , match: /\b(use|hiding)\b/
       }
     , { name: "keyword.control.unsafe.ribbon"
       , match: /\b(unsafe)\b/
