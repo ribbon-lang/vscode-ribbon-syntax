@@ -10,7 +10,7 @@ export const standard: TMGrammarScope =
       , captures: { 1: { name: "comment.line.operator.ribbon" } }
       }
     , { name: "keyword.control.ribbon"
-      , match: /\b(let|if|then|else|loop|while|until|do|break|continue|goto|defer|return|select|match|in|with|where|for|forall)\b/
+      , match: /\b(let|if|then|else|loop|while|until|do|break|continue|defer|return|match|in|with|where|for)\b/
       }
     , { name: "keyword.control.directive.ribbon"
       , match: /\b(use|hiding)\b/
@@ -19,13 +19,10 @@ export const standard: TMGrammarScope =
       , match: /\b(unsafe)\b/
       }
     , { name: "storage.type.ribbon"
-      , match: /[ζϕλΛ∀∃ΠΣ]/
-      }
-    , { name: "storage.type.ribbon"
-      , match: /\b(effect|handler|type|alias|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
+      , match: /\b(effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
       }
     , { name: "variable.ribbon"
-      , match: /(\b|(?<=[ζϕλΛ∀∃ΠΣ]))((\p{Lu}(?<![ζϕλΛ∀∃ΠΣ]))(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*)(?<![ζϕλΛ∀∃ΠΣ])/
+      , match: /\b((\p{Lu})(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*)/
       }
     , { name: "variable.parameter.ribbon"
       , match: /'((_|[^\p{C}\p{S}\p{P}\p{Z}])(((_|[^\p{C}\p{S}\p{P}\p{Z}])(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*))?)(?!')/
@@ -34,7 +31,7 @@ export const standard: TMGrammarScope =
       , match: /#((_|[^\p{C}\p{S}\p{P}\p{Z}])(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*)/
       }
     , { name: "constant.language.ribbon"
-      , match: /\b(true|false|null|default|inf|nan|mixfix|infix|infixl|infixr|prefix|postfix|atom)\b/
+      , match: /\b(true|false|null|default|inf|nan)\b/
       }
     , { name: "constant.numeric.decimal.ribbon"
       , match: /\b([0-9][0-9_]*)([eE][\-+]?[0-9][0-9_]*)?\b/
@@ -46,7 +43,7 @@ export const standard: TMGrammarScope =
       , match: /\b0b[0-1][0-1_]+\b/
       }
     , { name: "keyword.operator.ribbon"
-      , match: /((\p{Symbol}|\p{Punctuation})(?<=[^_'"`ζϕλΛ∀∃ΠΣ$#␣{}\[\]()]))+/
+      , match: /((\p{Symbol}|\p{Punctuation})(?<=[^_'"`$#{}\[\]()]))+/
       }
     , { name: "keyword.operator.ribbon"
       , match: /[#$](?!(_|[^\p{C}\p{S}\p{P}\p{Z}]))/
