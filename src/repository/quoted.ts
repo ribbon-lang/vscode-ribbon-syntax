@@ -15,7 +15,7 @@ export const quoted: TMGrammarScope =
       , match: /\b(effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
       }
     , { name: "invalid.illegal.quoted.ribbon"
-      , match: /'((_|[^\p{C}\p{S}\p{P}\p{Z}])(((_|[^\p{C}\p{S}\p{P}\p{Z}])(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*))?)(?!')/
+      , match: /'(?!is|as|of|has|not|and|or|new|mut|const|pub|let|if|then|else|loop|while|until|do|break|continue|defer|return|match|in|with|where|for|use|hiding|unsafe|effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign|true|false|null|default|inf|nan)(_|[^\p{C}\p{S}\p{P}\p{Z}])(?!')(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*/
       }
     , { name: "invalid.illegal.quoted.ribbon"
       , match: /\b(true|false|null|default|inf|nan)\b/
@@ -48,7 +48,7 @@ export const quoted: TMGrammarScope =
       , match: /[#$](?!(_|[^\p{C}\p{S}\p{P}\p{Z}]))/
       }
     , { name: "keyword.operator.quoted.ribbon"
-      , match: /(^|\b)(is|as|not|and|or|new|mut|const|pub)($|\b)/
+      , match: /(^|\b)(is|as|of|has|not|and|or|new|mut|const|pub)($|\b)/
       }
     , { name: "constant.escape.quoted.ribbon"
       , match: /\$((_|[^\p{C}\p{S}\p{P}\p{Z}])(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*)/
