@@ -19,7 +19,7 @@ export const standard: TMGrammarScope =
       , match: /\b(unsafe)\b/
       }
     , { name: "storage.type.ribbon"
-      , match: /\b(effect|handler|type|struct|union|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
+      , match: /\b(effect(s?)|handler|type|struct|union|data|constraint|value|kind|fun|class|instance|module|file|namespace|foreign)\b/
       }
     , { name: "variable.ribbon"
       , match: /\b((\p{Lu})(['_]|[^\p{C}\p{S}\p{P}\p{Z}])*)/
